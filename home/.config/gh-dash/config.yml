@@ -1,0 +1,38 @@
+prSections:
+  - title: 我的 PR
+    filters: is:open author:@me
+  - title: 待我评审
+    filters: is:open review-requested:@me
+  - title: 参与的
+    filters: is:open involves:@me -author:@me
+issuesSections:
+  - title: 分配给我
+    filters: is:open assignee:@me
+  - title: 我创建的
+    filters: is:open author:@me
+defaults:
+  preview:
+    open: true
+    width: 60
+  prsLimit: 20
+  issuesLimit: 20
+  view: prs
+  refetchIntervalMinutes: 30
+theme:
+  ui:
+    table:
+      showSeparator: true
+  colors:
+    text:
+      primary: "#F8F8F2"
+      secondary: "#66D9EF"
+      inverted: "#272822"
+      faint: "#75715E"
+      warning: "#F92672"
+      success: "#A6E22E"
+    background:
+      selected: "#49483E"
+    border:
+      primary: "#75715E"
+      secondary: "#49483E"
+      faint: "#3E3D32"

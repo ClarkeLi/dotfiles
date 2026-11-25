@@ -1,0 +1,13 @@
+# <path under $HOME> <git url> <commit>
+.oh-my-zsh https://github.com/ohmyzsh/ohmyzsh.git 2b547d113b7e55a556b695c9372f1beb721efd67
+.oh-my-zsh/custom/plugins/fzf-tab https://github.com/Aloxaf/fzf-tab 24105b15714bfec37989ed5c5b6e60f572253019
+.oh-my-zsh/custom/plugins/you-should-use https://github.com/MichaelAquilina/zsh-you-should-use 5f3d129864ee4505043d88c3486224f1d75b692e
+.oh-my-zsh/custom/plugins/zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions 0e810e5afa27acbd074398eefbe28d13005dbc15
+.oh-my-zsh/custom/plugins/zsh-syntax-highlighting https://github.com/zsh-users/zsh-syntax-highlighting.git 5eb677bb0fa9a3e60f0eff031dc13926e093df92
+.tmux/plugins/tmux-continuum https://github.com/tmux-plugins/tmux-continuum 0698e8f4b17d6454c71bf5212895ec055c578da0
+.tmux/plugins/tmux-floax https://github.com/omerxx/tmux-floax 133f526793d90d2caa323c47687dd5544a2c704b
+.tmux/plugins/tmux-fzf https://github.com/sainnhe/tmux-fzf 2839d6bd0e13b7c5e385e131e4c217917fa73555
+.tmux/plugins/tmux-resurrect https://github.com/tmux-plugins/tmux-resurrect cff343cf9e81983d3da0c8562b01616f12e8d548
+.tmux/plugins/tmux-sensible https://github.com/tmux-plugins/tmux-sensible 25cb91f42d020f675bb0a2ce3fbd3a5d96119efa
+.tmux/plugins/tmux-yank https://github.com/tmux-plugins/tmux-yank acfd36e4fcba99f8310a7dfb432111c242fe7392
+.tmux/plugins/tpm https://github.com/tmux-plugins/tpm e261deb1b47614eed3400089ce7197dc68acc4eb

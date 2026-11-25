@@ -1,0 +1,35 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	email = 143861495+ClarkeLi@users.noreply.github.com
+	name = Clarke Li
+[core]
+	excludesfile = ~/.gitignore_global
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	line-numbers = true
+	side-by-side = false
+	dark = true
+	syntax-theme = Monokai Extended
+	hyperlinks = true
+	file-style = "#66D9EF bold"
+	file-decoration-style = "#75715E ul"
+	hunk-header-style = "#75715E italic"
+	hunk-header-decoration-style = "#49483E box"
+	minus-style = "syntax #47202F"
+	minus-emph-style = "syntax #9C2A52"
+	plus-style = "syntax #2B3A1E"
+	plus-emph-style = "syntax #4F7A1F"
+	line-numbers-minus-style = "#F92672"
+	line-numbers-plus-style = "#A6E22E"
+	line-numbers-zero-style = "#75715E"
+	line-numbers-left-format = "{nm:>4} "
+	line-numbers-right-format = "{np:>4} │ "
+[merge]
+	conflictstyle = zdiff3

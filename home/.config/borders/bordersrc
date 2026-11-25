@@ -1,0 +1,10 @@
+#!/bin/bash
+# JankyBorders · Monokai：聚焦窗口粉色，其余窗口暗灰
+options=(
+  style=round
+  width=5.0
+  hidpi=on
+  active_color=0xfff92672
+  inactive_color=0xff49483e
+)
+borders "${options[@]}"

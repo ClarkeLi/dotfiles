@@ -1,0 +1,59 @@
+# Paths relative to $HOME. A trailing slash means "whole directory".
+# backup.sh copies these into home/, install.sh copies them back.
+
+# shell
+.zshrc
+.zshenv
+.zprofile
+.profile
+.bash_profile
+.hushlogin
+.local/bin/claude
+
+# terminals
+.config/ghostty/config
+.config/ghostty/sample.sh
+.config/ghostty/themes/
+.config/ghostty/shaders/cursor_warp.glsl
+.config/ghostty/icon/ghostty-flat.icns
+.config/ghostty/icon/ghostty-flat.svg
+Library/Application Support/iTerm2/DynamicProfiles/monokai.json
+Library/Fonts/JetBrainsMonoNerdFont-Regular.ttf
+
+# tmux
+.tmux.conf
+.tmux/scripts/
+
+# prompt and CLI tools
+.config/starship.toml
+.config/atuin/config.toml
+.config/bat/config
+.config/btop/btop.conf
+.config/fastfetch/config.jsonc
+.config/neofetch/config.conf
+.config/television/
+.config/thefuck/settings.py
+.config/yazi/theme.toml
+.config/borders/bordersrc
+Library/Application Support/lazygit/config.yml
+
+# git and GitHub CLI
+.gitconfig
+.gitignore_global
+.config/git/ignore
+.config/gh/config.yml
+.config/gh-dash/config.yml
+
+# editors
+.config/nvim/
+.ideavimrc
+.latexmkrc
+
+# keyboard
+.config/karabiner/karabiner.json
+
+# Claude Code
+.claude/settings.json
+.claude/CLAUDE.md
+.claude/statusline.sh
+.claude/themes/monokai.json

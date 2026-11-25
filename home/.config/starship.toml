@@ -1,0 +1,116 @@
+# Monokai Powerline 单行样式（配合 transient prompt）
+"$schema" = 'https://starship.rs/config-schema.json'
+add_newline = true
+palette = 'monokai'
+
+format = """
+[╭─](bold comment)[](fg:pink)\
+$os\
+$username\
+[](fg:pink bg:orange)\
+$directory\
+[](fg:orange bg:yellow)\
+$git_branch\
+$git_status\
+[](fg:yellow bg:purple)\
+$python\
+$nodejs\
+$rust\
+$golang\
+$java\
+$conda\
+$docker_context\
+[](fg:purple)\
+$fill\
+$cmd_duration\
+$time
+[╰─](bold comment)$character"""
+
+[palettes.monokai]
+bg = '#272822'
+fg = '#F8F8F2'
+comment = '#75715E'
+pink = '#F92672'
+orange = '#FD971F'
+yellow = '#E6DB74'
+green = '#A6E22E'
+cyan = '#66D9EF'
+purple = '#AE81FF'
+
+[fill]
+symbol = ' '
+
+[character]
+success_symbol = '[❯](bold green)'
+error_symbol = '[❯](bold pink)'
+vimcmd_symbol = '[❮](bold purple)'
+
+[os]
+disabled = false
+style = 'bg:pink fg:bg'
+format = '[ $symbol ]($style)'
+[os.symbols]
+Macos = ''
+
+[username]
+show_always = false
+style_user = 'bg:pink fg:bg bold'
+style_root = 'bg:pink fg:bg bold'
+format = '[$user ]($style)'
+
+[directory]
+style = 'bg:orange fg:bg bold'
+format = '[ $path ]($style)[$read_only]($read_only_style)'
+read_only = ' '
+read_only_style = 'bg:orange fg:bg'
+truncation_length = 3
+truncation_symbol = '…/'
+
+[git_branch]
+symbol = ''
+style = 'bg:yellow fg:bg bold'
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = 'bg:yellow fg:bg'
+format = '[($all_status$ahead_behind )]($style)'
+
+[python]
+symbol = ''
+style = 'bg:purple fg:bg'
+format = '[ $symbol ($version)( \($virtualenv\)) ]($style)'
+[nodejs]
+symbol = ''
+style = 'bg:purple fg:bg'
+format = '[ $symbol ($version) ]($style)'
+[rust]
+symbol = ''
+style = 'bg:purple fg:bg'
+format = '[ $symbol ($version) ]($style)'
+[golang]
+symbol = ''
+style = 'bg:purple fg:bg'
+format = '[ $symbol ($version) ]($style)'
+[java]
+symbol = ''
+style = 'bg:purple fg:bg'
+format = '[ $symbol ($version) ]($style)'
+[conda]
+symbol = ''
+style = 'bg:purple fg:bg'
+format = '[ $symbol $environment ]($style)'
+[docker_context]
+symbol = ''
+style = 'bg:purple fg:bg'
+format = '[ $symbol $context ]($style)'
+
+[cmd_duration]
+min_time = 1500
+style = 'yellow'
+format = '[  $duration ]($style)'
+
+[time]
+disabled = false
+time_format = '%H:%M'
+style = 'comment'
+format = '[  $time]($style)'

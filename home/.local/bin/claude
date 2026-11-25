@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+# Claude Code needs a large descriptor limit when indexing larger projects.
+ulimit -n 2147483646 2>/dev/null || true
+# 在 tmux 里 Claude Code 默认把颜色降到 256 色，diff 的暗红/暗绿整行背景会被量化成同一个灰；
+# tmux 已声明 RGB（见 ~/.tmux.conf 的 terminal-features），这里告诉它保持 24 位真彩色。
+export CLAUDE_CODE_TMUX_TRUECOLOR=1
+exec /opt/homebrew/bin/claude "$@"

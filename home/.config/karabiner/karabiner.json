@@ -1,0 +1,129 @@
+{
+    "global": {
+        "show_in_menu_bar": false
+    },
+    "profiles": [
+        {
+            "name": "Default profile",
+            "selected": true,
+            "simple_modifications": [],
+            "virtual_hid_keyboard": {
+                "keyboard_type_v2": "ansi"
+            },
+            "complex_modifications": {
+                "rules": [
+                    {
+                        "description": "WeType: Shift+[ / Shift+] → 「 」(借系统简体拼音输出，其余保持半角)",
+                        "manipulators": [
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "open_bracket",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.inputmethod\\.SCIM\\.ITABC$"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "vk_none",
+                                        "hold_down_milliseconds": 80
+                                    },
+                                    {
+                                        "key_code": "open_bracket",
+                                        "modifiers": [
+                                            "left_shift"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "vk_none",
+                                        "hold_down_milliseconds": 80
+                                    },
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.tencent\\.inputmethod\\.wetype\\.pinyin$"
+                                        }
+                                    }
+                                ],
+                                "conditions": [
+                                    {
+                                        "type": "input_source_if",
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.tencent\\.inputmethod\\.wetype"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "basic",
+                                "from": {
+                                    "key_code": "close_bracket",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.inputmethod\\.SCIM\\.ITABC$"
+                                        }
+                                    },
+                                    {
+                                        "key_code": "vk_none",
+                                        "hold_down_milliseconds": 80
+                                    },
+                                    {
+                                        "key_code": "close_bracket",
+                                        "modifiers": [
+                                            "left_shift"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "vk_none",
+                                        "hold_down_milliseconds": 80
+                                    },
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.tencent\\.inputmethod\\.wetype\\.pinyin$"
+                                        }
+                                    }
+                                ],
+                                "conditions": [
+                                    {
+                                        "type": "input_source_if",
+                                        "input_sources": [
+                                            {
+                                                "input_source_id": "^com\\.tencent\\.inputmethod\\.wetype"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "devices": [
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": true,
+                        "product_id": 556,
+                        "vendor_id": 1452
+                    },
+                    "ignore": false
+                }
+            ]
+        }
+    ]
+}

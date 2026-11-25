@@ -1,0 +1,7 @@
+{
+  // Chinese prose is naturally long in UTF-8 character counts. Keep the useful
+  // Markdown rules, but do not flag paragraphs solely for exceeding 80 columns.
+  "config": {
+    "MD013": false
+  }
+}

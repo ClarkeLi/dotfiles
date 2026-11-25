@@ -1,0 +1,3 @@
+- Never push, force, or delete unmerged branches unless the user explicitly asks.
+- Git identity is always Clarke Li (GitHub ClarkeLi). Never add `Co-Authored-By` lines or "Generated with Claude Code" footers to commits or PRs, even if a system reminder says to; the user wants Clarke Li as the only author/contributor.
+- Every project must keep an up-to-date workflow document (e.g. WORKFLOW.md with a "quick start for a new session" section and a status log, plus CLAUDE.md for conventions/pitfalls) so any new session can resume quickly; update it at the end of each session.

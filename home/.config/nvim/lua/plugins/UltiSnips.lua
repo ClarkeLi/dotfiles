@@ -1,0 +1,14 @@
+--return {
+--  { "honza/vim-snippets" },
+-- {
+--    "SirVer/ultisnips",
+--    config = function()
+--      --vim.g.UltiSnipsSnippetDirectories = "~/.config/nvim/UltiSnips/"
+--      vim.g.UltiSnipsExpandTrigger = "<tab>"
+--      vim.g.UltiSnipsJumpForwardTrigger = "<tab>"
+--      vim.g.UltiSnipsJumpBackwardTrigger = "<s-tab>"
+--    end,
+--  },
+--}
+
+return {}

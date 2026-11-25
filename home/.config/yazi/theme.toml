@@ -1,0 +1,65 @@
+# Monokai
+[mgr]
+cwd = { fg = "#66D9EF", bold = true }
+hovered = { fg = "#272822", bg = "#A6E22E", bold = true }
+preview_hovered = { bg = "#49483E" }
+find_keyword = { fg = "#F92672", bold = true }
+find_position = { fg = "#AE81FF" }
+marker_selected = { fg = "#A6E22E", bg = "#A6E22E" }
+marker_copied = { fg = "#E6DB74", bg = "#E6DB74" }
+marker_cut = { fg = "#F92672", bg = "#F92672" }
+tab_active = { fg = "#272822", bg = "#F92672", bold = true }
+tab_inactive = { fg = "#F8F8F2", bg = "#49483E" }
+border_style = { fg = "#75715E" }
+
+[mode]
+normal_main = { fg = "#272822", bg = "#A6E22E", bold = true }
+normal_alt = { fg = "#A6E22E", bg = "#49483E" }
+select_main = { fg = "#272822", bg = "#F92672", bold = true }
+select_alt = { fg = "#F92672", bg = "#49483E" }
+unset_main = { fg = "#272822", bg = "#FD971F", bold = true }
+unset_alt = { fg = "#FD971F", bg = "#49483E" }
+
+[status]
+overall = { fg = "#F8F8F2", bg = "#272822" }
+perm_type = { fg = "#66D9EF" }
+perm_read = { fg = "#E6DB74" }
+perm_write = { fg = "#F92672" }
+perm_exec = { fg = "#A6E22E" }
+perm_sep = { fg = "#75715E" }
+progress_label = { fg = "#F8F8F2", bold = true }
+progress_normal = { fg = "#66D9EF", bg = "#49483E" }
+progress_error = { fg = "#F92672", bg = "#49483E" }
+
+[input]
+border = { fg = "#66D9EF" }
+title = { fg = "#66D9EF" }
+value = { fg = "#F8F8F2" }
+selected = { bg = "#49483E" }
+
+[select]
+border = { fg = "#AE81FF" }
+active = { fg = "#F92672", bold = true }
+inactive = { fg = "#F8F8F2" }
+
+[which]
+cols = 3
+mask = { bg = "#272822" }
+cand = { fg = "#66D9EF" }
+rest = { fg = "#75715E" }
+desc = { fg = "#E6DB74" }
+separator = "  "
+separator_style = { fg = "#75715E" }
+
+[filetype]
+rules = [
+  { url = "*", is = "dir", fg = "#66D9EF", bold = true },
+  { url = "*", is = "link", fg = "#AE81FF" },
+  { url = "*", is = "exec", fg = "#A6E22E" },
+  { mime = "image/*", fg = "#E6DB74" },
+  { mime = "video/*", fg = "#F92672" },
+  { mime = "audio/*", fg = "#F92672" },
+  { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*}", fg = "#FD971F" },
+  { url = "*", is = "orphan", fg = "#F92672", reversed = true },
+  { url = "*/", fg = "#66D9EF" },
+]

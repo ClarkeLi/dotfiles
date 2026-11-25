@@ -1,0 +1,71 @@
+# ===== 外观 =====
+theme = Monokai Classic
+background-opacity = 0.92
+background-blur-radius = 25
+window-padding-x = 14
+window-padding-y = 10
+window-padding-balance = true
+# 内边距区域沿用相邻单元格的背景色
+window-padding-color = extend
+# 更准确的文字混色
+alpha-blending = linear-corrected
+selection-background = #49483E
+selection-foreground = #F8F8F2
+split-divider-color = #75715E
+unfocused-split-fill = #1E1F1C
+window-theme = auto
+macos-titlebar-style = tabs
+window-save-state = always
+window-width = 130
+window-height = 36
+
+# ===== 字体 =====
+font-family = "JetBrainsMono Nerd Font"
+# font-style = Medium  # JetBrains 只装了 Regular，没有 Medium
+font-size = 14
+font-feature = +calt
+font-feature = +liga
+font-thicken = true
+adjust-cell-height = 10%
+
+# ===== 光标 =====
+cursor-style = block
+cursor-style-blink = true
+cursor-color = #A6E22E
+cursor-opacity = 1
+cursor-text = #272822
+
+# ===== 交互 =====
+working-directory = home
+window-inherit-working-directory = true
+mouse-hide-while-typing = true
+copy-on-select = clipboard
+macos-option-as-alt = true
+confirm-close-surface = false
+shell-integration = zsh
+shell-integration-features = cursor,sudo,title
+scrollback-limit = 20000000
+unfocused-split-opacity = 0.85
+focus-follows-mouse = false
+
+# ===== 快捷键 =====
+# 下拉式快速终端：全局 Ctrl+`
+keybind = global:ctrl+grave_accent=toggle_quick_terminal
+quick-terminal-position = top
+quick-terminal-animation-duration = 0.15
+# 分屏
+keybind = cmd+d=new_split:right
+keybind = cmd+shift+d=new_split:down
+keybind = cmd+alt+left=goto_split:left
+keybind = cmd+alt+right=goto_split:right
+keybind = cmd+alt+up=goto_split:up
+keybind = cmd+alt+down=goto_split:down
+keybind = cmd+shift+enter=toggle_split_zoom
+
+# ===== 特效 =====
+custom-shader = shaders/cursor_warp.glsl
+custom-shader-animation = true
+
+# ===== 程序图标（自绘扁平小幽灵，源文件 icon/ghostty-flat.svg）=====
+macos-icon = custom
+macos-custom-icon = ~/.config/ghostty/icon/ghostty-flat.icns

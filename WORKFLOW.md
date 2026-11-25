@@ -9,3 +9,4 @@
 - 2026-11-25: Initial backup. `backup.sh`, `install.sh`, `Brewfile`, README. Tested in a temporary home:
   file copy, pinned plugin clones, zsh startup, tmux config parsing, Neovim plugin restore.
   Not tested: full `install.sh` (Homebrew, Claude Code plugins, Lumen build) on a clean Mac.
+- 2026-11-25: Published to https://github.com/ClarkeLi/dotfiles (public); a fresh clone restores files correctly.
